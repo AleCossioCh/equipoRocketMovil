@@ -9,4 +9,11 @@
     <string name="señalizacion">Señalizacion y Accidentes</string>
     <string name="legislacion">Legislacion Boliviana</string>
     <string name="mecanica">Mecanica Basica</string>
+    <string name="days5_rbtn">más de 5 días</string>
+    <string name="days10_rbtn">más de 10 días</string>
+    <string name="days15_rbtn">más de 15 días</string>
+    <string name="days20_rbtn">más de 20 días</string>
+    <string name="save_btn">Guardar</string>
+    <string name="timeQuestion_txt">¿Cuántos días faltan para tu examen de conducción?</string>
+    <string name="todo">TODO</string>
 </resources>
