@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:background="#192A56"
 
-    tools:context=".win">
+    tools:context=".WinActivity">
 
     <LinearLayout
-        android:layout_width="347dp"
-        android:layout_height="547dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="261dp"
+        android:layout_height="416dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -20,26 +21,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952">
 
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="116dp"
-            android:layout_marginBottom="15dp"
-            android:background="#4CD137"
-            android:text="Lo lograste!"
-            android:textAlignment="center"
-            android:textColor="#F5F6FA"
-            android:textSize="64sp" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="273dp"
             app:srcCompat="@drawable/image_5" />
-
 
         <TextView
             android:layout_width="277dp"
@@ -50,6 +40,29 @@
             android:textColor="#F5F6FA"
             android:textSize="24sp" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="341dp"
+        android:layout_height="163dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="331dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_btn_primary"
+            android:gravity="center"
+            android:text="Lo lograste!"
+            android:textAlignment="center"
+            android:textColor="#F5F6FA"
+            android:textSize="54sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

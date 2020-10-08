@@ -3,9 +3,9 @@ package edu.bo.projectrocket
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class win : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_win)
+        setContentView(R.layout.activity_home)
     }
 }

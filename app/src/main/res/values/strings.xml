@@ -3,4 +3,10 @@
     <string name="question">Cuando está _________ una doble linea amarilla en la calzada,¿En qué caso usted puede adelantar?</string>
     <string name="response">Escribe el complemento....</string>
     <string name="progress">5/10</string>
+    <string name="educacion">Educacion Vial</string>
+    <string name="normas">Normas de Circulacion</string>
+    <string name="auxilios">Primeros Auxilios</string>
+    <string name="señalizacion">Señalizacion y Accidentes</string>
+    <string name="legislacion">Legislacion Boliviana</string>
+    <string name="mecanica">Mecanica Basica</string>
 </resources>

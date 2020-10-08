@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             //get text from edittexts
 
             //intent to start activity
-            val intent = Intent(this@MainActivity, home::class.java)
+            val intent = Intent(this@MainActivity, InitActivity::class.java)
             startActivity(intent)
 
         }
