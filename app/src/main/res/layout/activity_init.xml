@@ -43,13 +43,5 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/win_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#4CD137"
-        android:shadowColor="#009688"
-        android:text="Win"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
