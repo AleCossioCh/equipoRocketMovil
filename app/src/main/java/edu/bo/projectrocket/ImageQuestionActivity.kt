@@ -17,12 +17,7 @@ class ImageQuestionActivity : AppCompatActivity() {
             idopcionEstacion.setBackgroundColor(Color.parseColor("#F5F6FA"))
             idopcionEstacion.setBackgroundResource(R.drawable.bg_btn_red)
         }
-
-        //val idNextView = findViewById<ImageButton>(R.id.idNextView)
         idNextView.setOnClickListener {
-            //get text from edittexts
-
-            //intent to start activity
             val intent = Intent(this@ImageQuestionActivity, MainActivity::class.java)
             startActivity(intent)
 
