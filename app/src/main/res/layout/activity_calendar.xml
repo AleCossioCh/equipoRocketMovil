@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="top"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:visibility="visible"
+        app:srcCompat="@drawable/iconback"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textViewTimeQuestion"
+        android:layout_width="352dp"
+        android:layout_height="160dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/timeQuestion_txt"
+        android:textColor="#1E272E"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radioButtonTimeOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton5Days"
+            android:layout_width="353dp"
+            android:layout_height="57dp"
+            android:background="@drawable/borders"
+            android:elegantTextHeight="true"
+            android:text="@string/days5_rbtn"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton10Days"
+            android:layout_width="353dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borders"
+            android:elegantTextHeight="true"
+            android:text="@string/days10_rbtn"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton15Days"
+            android:layout_width="353dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borders"
+            android:elegantTextHeight="true"
+            android:text="@string/days15_rbtn"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton20Days"
+            android:layout_width="353dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borders"
+            android:elegantTextHeight="true"
+            android:text="@string/days20_rbtn"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="352dp"
+        android:layout_height="54dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/green_bg_bordered"
+        android:text="@string/save_btn"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+</LinearLayout>

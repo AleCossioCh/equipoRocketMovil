@@ -13,7 +13,10 @@ class HomeActivity : AppCompatActivity() {
         educacionVial.setOnClickListener{
                 val intent = Intent(this@HomeActivity, ImageQuestionActivity::class.java)
                 startActivity(intent)
-
+        }
+        idcalendar.setOnClickListener{
+            val intent = Intent(this@HomeActivity, CalendarActivity::class.java)
+            startActivity(intent)
 
         }
     }
