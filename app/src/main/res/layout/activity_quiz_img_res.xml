@@ -5,22 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackgrnd"
-    tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="283dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="57dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#F8F8F8"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/response"
-        android:textColor="#808E9B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question" />
+    tools:context=".QuizImgRes">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -40,7 +25,7 @@
         android:layout_height="23dp"
         android:layout_marginTop="13dp"
         android:gravity="center"
-        android:text="@string/progress5"
+        android:text="@string/progress2"
         android:textColor="#FBFBFB"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -63,10 +48,11 @@
 
         <TextView
             android:id="@+id/textQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
             android:layout_marginTop="20dp"
-            android:text="@string/question"
+            android:text="@string/question_img"
+            android:textAlignment="center"
             android:textColor="#070707"
             android:textSize="24sp" />
     </androidx.cardview.widget.CardView>
@@ -77,11 +63,43 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="#4CD137"
+        android:backgroundTint="@color/homebtn"
         android:shadowColor="#009688"
-        android:text="Home"
+        android:text="@string/homebtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_directions"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_directions"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_directions"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/s1"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="279dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

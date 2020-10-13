@@ -29,7 +29,7 @@
             android:layout_height="116dp"
             android:layout_marginBottom="15dp"
             android:background="#4CD137"
-            android:text="Lo lograste!"
+            android:text="@string/logro"
             android:textAlignment="center"
             android:textColor="#F5F6FA"
             android:textSize="64sp" />
@@ -45,7 +45,7 @@
             android:layout_width="277dp"
             android:layout_height="131dp"
             android:gravity="center"
-            android:text="¡Completaste la meta del dia!"
+            android:text="@string/compActiv"
             android:textAlignment="center"
             android:textColor="#F5F6FA"
             android:textSize="24sp" />

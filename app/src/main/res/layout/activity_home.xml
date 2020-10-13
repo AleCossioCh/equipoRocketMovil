@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#192A56"
+    android:background="@color/colorBackgrnd"
     tools:context=".home">
 
     <LinearLayout
         android:layout_width="368dp"
         android:layout_height="215dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
             android:id="@+id/textView"
             android:layout_width="267dp"
             android:layout_height="86dp"
-            android:text="PaquitApp!"
+            android:text="@string/app_title"
             android:textAlignment="center"
 
             android:textColor="#F5F6FA"
@@ -36,19 +36,22 @@
         <TextView
             android:layout_width="220dp"
             android:layout_height="93dp"
-            android:text="Repasa las reglas de transito donde sea"
+            android:text="@string/app_descrip"
             android:textAlignment="center"
             android:textColor="#F5F6FA"
             android:textSize="18sp" />
 
     </LinearLayout>
+
     <Button
         android:id="@+id/win_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#4CD137"
         android:shadowColor="#009688"
-        android:text="Home"
-        tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="667dp" />
+        android:text="@string/homebtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

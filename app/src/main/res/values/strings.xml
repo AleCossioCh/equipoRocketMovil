@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">ProjectRocket</string>
-    <string name="question">Cuando está _________ una doble linea amarilla en la calzada,¿En qué caso usted puede adelantar?</string>
+    <string name="question">Cuando está _________ una doble linea amarilla en la calzada, ¿En qué caso usted puede adelantar?</string>
     <string name="response">Escribe el complemento....</string>
-    <string name="progress">5/10</string>
+    <string name="progress1">1/10</string>
+    <string name="progress2">2/10</string>
+    <string name="progress3">3/10</string>
+    <string name="progress4">4/10</string>
+    <string name="progress5">5/10</string>
+    <string name="progress6">6/10</string>
+    <string name="progress7">7/10</string>
+    <string name="progress8">8/10</string>
+    <string name="progress9">9/10</string>
+    <string name="progress10">10/10</string>
+    <string name="logro">Lo lograste!</string>>
+    <string name="compActiv">¡Completaste la meta del dia!</string>
+    <string name="app_title">PaquitApp!</string>
+    <string name="app_descrip">Repasa las reglas de transito donde sea</string>>
+    <string name="homebtn">Home</string>>
+    <string name="question_img">¿Cuál de las siguientes imágenes pertenece a “Flujo convergente”?</string>
 </resources>
