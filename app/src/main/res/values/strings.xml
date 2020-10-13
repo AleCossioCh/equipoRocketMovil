@@ -14,4 +14,14 @@
     <string name="opcionfumar">No Fumar</string>
     <string name="opcionGirar">No girar en U</string>
     <string name="opcionstop">Stop</string>
+
+    <!--TEXT QUESTION-->
+    <string name="TextQuestion">El adelantamiento de un vehículo debe ser realizado por:</string>
+    <string name="TextQuestionAnswer1">El lado derecho de la vía</string>
+    <string name="TextQuestionAnswer2">El lado izquierdo de la vía</string>
+    <string name="TextQuestionAnswer3">Nunca se debe adelantar</string>
+    <string name="TextQuestionAnswer4">Depende la situación</string>
+    <string name="progressIndicator">6/10</string>
+
+
 </resources>

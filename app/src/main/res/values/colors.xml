@@ -6,4 +6,8 @@
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="windowBackground">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>
+    <color name="colorButtonRigth">#4CD137</color>
+    <color name="colorButtonWrong">#E84118</color>
+    <color name="colorButtonWhite">#F5F6FA</color>
+    <color name="colorBackground">#273C75</color>
 </resources>
