@@ -63,8 +63,10 @@
             android:background="@drawable/borders"
             android:elegantTextHeight="true"
             android:text="@string/days15_rbtn"
-            android:textAlignment="center"
-            android:textSize="24sp" />
+            android:gravity="center"
+            android:textSize="24sp"
+
+            />
 
         <RadioButton
             android:id="@+id/radioButton20Days"
