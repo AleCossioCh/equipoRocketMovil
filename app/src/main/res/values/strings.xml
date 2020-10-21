@@ -30,5 +30,8 @@
     <string name="TextQuestionAnswer4">Depende la situación</string>
     <string name="progressIndicator">6/10</string>
 
+    <!--IMAGE ANSWER QUESTIONS-->
+    <string name="ImageAnswerQ1">¿Cuál de las siguientes imágenes pertenece a “Flujo convergente”?</string>
+
 
 </resources>
