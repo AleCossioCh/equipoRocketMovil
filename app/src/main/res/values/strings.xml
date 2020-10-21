@@ -16,4 +16,22 @@
     <string name="save_btn">Guardar</string>
     <string name="timeQuestion_txt">¿Cuántos días faltan para tu examen de conducción?</string>
     <string name="todo">TODO</string>
+    <string name="question1">"Esta señal pertenece a "</string>
+    <string name="opcionEstacion">No estacionar</string>
+    <string name="opcionfumar">No Fumar</string>
+    <string name="opcionGirar">No girar en U</string>
+    <string name="opcionstop">Stop</string>
+
+    <!--TEXT QUESTION-->
+    <string name="TextQuestion">El adelantamiento de un vehículo debe ser realizado por:</string>
+    <string name="TextQuestionAnswer1">El lado derecho de la vía</string>
+    <string name="TextQuestionAnswer2">El lado izquierdo de la vía</string>
+    <string name="TextQuestionAnswer3">Nunca se debe adelantar</string>
+    <string name="TextQuestionAnswer4">Depende la situación</string>
+    <string name="progressIndicator">6/10</string>
+
+    <!--IMAGE ANSWER QUESTIONS-->
+    <string name="ImageAnswerQ1">¿Cuál de las siguientes imágenes pertenece a “Flujo convergente”?</string>
+
+
 </resources>
