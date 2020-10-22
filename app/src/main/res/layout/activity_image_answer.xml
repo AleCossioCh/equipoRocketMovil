@@ -44,10 +44,13 @@
     <ImageButton
         android:id="@+id/btnIA1"
         android:layout_width="150dp"
+        android:scaleType="fitXY"
+        android:padding="20dp"
+        android:background="@drawable/bg_txt_white"
+        android:src="@drawable/camino_lateral"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="44dp"
-        android:background="@drawable/camino_lateral"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/QuestionTextView" />
 
@@ -57,7 +60,10 @@
         android:layout_height="150dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/bifurcacionent"
+        android:scaleType="fitXY"
+        android:padding="20dp"
+        android:background="@drawable/bg_txt_white"
+        android:src="@drawable/bifurcacionent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnIA2" />
 
@@ -66,8 +72,11 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/camino_lateraltv"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitXY"
+        android:padding="20dp"
+        android:background="@drawable/bg_txt_white"
+        android:src="@drawable/camino_lateraltv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnIA1" />
 
@@ -77,7 +86,10 @@
         android:layout_height="150dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/bifurcacioneny"
+        android:scaleType="fitXY"
+        android:padding="20dp"
+        android:background="@drawable/bg_txt_white"
+        android:src="@drawable/bifurcacioneny"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/QuestionTextView" />
 

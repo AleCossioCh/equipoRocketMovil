@@ -1,5 +1,6 @@
 package edu.bo.projectrocket
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -22,7 +23,8 @@ class TextQuestionActivity : AppCompatActivity() {
         buttonAnswer2.setOnClickListener(){
             buttonAnswer2.setBackgroundResource(R.drawable.bg_btn_primary)
             buttonAnswer2.setTextColor(Color.parseColor("#F5F6FA"))
-
+            val intent = Intent(this@TextQuestionActivity, WinActivity::class.java)
+            startActivity(intent)
         }
 
         buttonAnswer3.setOnClickListener(){
