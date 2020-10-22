@@ -33,7 +33,6 @@ class TextQuestionActivity : AppCompatActivity() {
         }
 
         buttonAnswer4.setOnClickListener(){
-            //buttonAnswer4.setBackgroundColor(Color.parseColor("#F5F6FA"))
             buttonAnswer4.setBackgroundResource(R.drawable.bg_btn_red)
             buttonAnswer4.setTextColor(Color.parseColor("#F5F6FA"))
 

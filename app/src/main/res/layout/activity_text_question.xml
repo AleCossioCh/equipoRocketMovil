@@ -46,7 +46,7 @@
 
     <Button
         android:id="@+id/buttonAnswer1"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="100dp"
@@ -63,7 +63,7 @@
 
     <Button
         android:id="@+id/buttonAnswer2"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
@@ -79,7 +79,7 @@
 
     <Button
         android:id="@+id/buttonAnswer3"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
@@ -95,7 +95,7 @@
 
     <Button
         android:id="@+id/buttonAnswer4"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
