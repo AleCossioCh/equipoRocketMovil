@@ -38,15 +38,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_weight="1"
-                android:fontFamily="monospace"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
                 android:text="@string/educacion"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textSize="21sp"
+                />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/señalizacion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -58,12 +59,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:text="@string/señalizacion"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto"                android:text="@string/señalizacion"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <ImageButton
                 android:id="@+id/imageButton6"
@@ -78,12 +79,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:text="@string/auxilios"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:fontFamily="@font/roboto"                android:text="@string/auxilios"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                />
 
         </LinearLayout>
 
@@ -108,12 +109,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:text="@string/normas"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:fontFamily="@font/roboto"                android:text="@string/normas"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
             <ImageButton
                 android:id="@+id/imageButton2"
@@ -128,12 +129,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:text="@string/legislacion"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:fontFamily="@font/roboto"                android:text="@string/legislacion"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                />
 
             <ImageButton
                 android:id="@+id/imageButton"
@@ -148,41 +149,45 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:text="@string/mecanica"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:fontFamily="@font/roboto"                android:text="@string/mecanica"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                 />
 
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="68dp"
+        android:layout_width="404dp"
+        android:layout_height="62dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45">
+        app:layout_constraintVertical_bias="0.409">
 
         <ImageButton
             android:id="@+id/imageButton7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="100dp"
+            android:layout_width="147dp"
+            android:layout_height="58dp"
             android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:background="@drawable/bg_txt_white"
+            android:padding="20dp"
             app:srcCompat="@drawable/ic_star_foreground" />
 
         <ImageButton
             android:id="@+id/idcalendar"
-            android:layout_width="171dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginStart="140dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@drawable/bg_txt_white"
             app:srcCompat="@drawable/ic_calendar_foreground" />

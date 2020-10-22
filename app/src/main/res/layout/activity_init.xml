@@ -29,12 +29,13 @@
             android:layout_height="86dp"
             android:text="PaquitApp!"
             android:textAlignment="center"
-
+            android:fontFamily="@font/roboto"
             android:textColor="#F5F6FA"
             android:textSize="48sp" />
 
         <TextView
             android:layout_width="220dp"
+            android:fontFamily="@font/roboto"
             android:layout_height="93dp"
             android:text="Repasa las reglas de transito donde sea"
             android:textAlignment="center"

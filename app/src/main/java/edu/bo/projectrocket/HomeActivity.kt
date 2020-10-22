@@ -23,5 +23,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+        señalizacion.setOnClickListener{
+            val intent = Intent(this@HomeActivity, ImageAnswerActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 }

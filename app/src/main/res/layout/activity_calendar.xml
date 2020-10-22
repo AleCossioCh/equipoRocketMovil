@@ -6,22 +6,29 @@
     android:layout_height="match_parent"
     android:foregroundGravity="top"
     android:gravity="center"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/imageButtonHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start|top"
-        android:visibility="visible"
-        app:srcCompat="@drawable/iconback"
-        android:contentDescription="@string/todo" />
+        android:id="@+id/idNextView"
+        android:layout_width="76dp"
+        android:layout_height="52dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_navigatebefore"
+        tools:layout_editor_absoluteY="-3dp" />
 
     <TextView
         android:id="@+id/textViewTimeQuestion"
         android:layout_width="352dp"
         android:layout_height="160dp"
+        android:fontFamily="@font/roboto"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/timeQuestion_txt"
         android:textColor="#1E272E"
@@ -39,9 +46,15 @@
             android:layout_width="353dp"
             android:layout_height="57dp"
             android:background="@drawable/borders"
+            android:button="@null"
+            android:buttonTint="#000000"
+            android:drawableStart="?android:attr/listChoiceIndicatorSingle"
             android:elegantTextHeight="true"
+            android:fontFamily="@font/roboto"
             android:text="@string/days5_rbtn"
             android:textAlignment="center"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="@color/navigationBarColor"
             android:textSize="24sp" />
 
         <RadioButton
@@ -53,7 +66,12 @@
             android:elegantTextHeight="true"
             android:text="@string/days10_rbtn"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:buttonTint="#000000"
+            android:textSize="24sp"
+            android:button="@null"
+            android:fontFamily="@font/roboto"
+            android:drawableStart="?android:attr/listChoiceIndicatorSingle"
+            />
 
         <RadioButton
             android:id="@+id/radioButton15Days"
@@ -65,7 +83,10 @@
             android:text="@string/days15_rbtn"
             android:gravity="center"
             android:textSize="24sp"
-
+            android:buttonTint="#000000"
+            android:fontFamily="@font/roboto"
+            android:button="@null"
+            android:drawableStart="?android:attr/listChoiceIndicatorSingle"
             />
 
         <RadioButton
@@ -77,7 +98,12 @@
             android:elegantTextHeight="true"
             android:text="@string/days20_rbtn"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto"
+            android:buttonTint="#000000"
+            android:button="@null"
+            android:drawableStart="?android:attr/listChoiceIndicatorSingle"
+            />
     </RadioGroup>
 
     <Button
@@ -87,7 +113,10 @@
         android:layout_margin="40dp"
         android:background="@drawable/green_bg_bordered"
         android:text="@string/save_btn"
-        android:textColor="#FFFFFF"
+        android:textColor="#F5F6FA"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:fontFamily="@font/roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.532"

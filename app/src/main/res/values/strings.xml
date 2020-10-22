@@ -29,6 +29,7 @@
     <string name="TextQuestionAnswer3">Nunca se debe adelantar</string>
     <string name="TextQuestionAnswer4">Depende la situación</string>
     <string name="progressIndicator">6/10</string>
+    <string name="ImageAnswerQ1">¿Cuál de las siguientes imágenes pertenece a “Flujo convergente”?</string>
 
 
 </resources>

@@ -48,7 +48,7 @@
 
     </androidx.cardview.widget.CardView>-->
 
-    <Button
+   <!-- <Button
         android:id="@+id/home_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,30 +57,31 @@
         android:text="Home"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="13dp" />
-
+-->
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="400dp"
-        android:layout_height="164dp"
+        android:layout_width="342dp"
+        android:layout_height="213dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/progress"
-        app:layout_constraintVertical_bias="0.324"
-        tools:layout_editor_absoluteX="5dp">
+        app:layout_constraintVertical_bias="0.192">
 
         <TextView
             android:id="@+id/textQuestion"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_height="188dp"
             android:background="@drawable/bg_txt_white"
             android:gravity="center"
+            android:padding="20dp"
             android:text="@string/question"
-            android:textAlignment="center"
+            android:fontFamily="@font/roboto"
             android:textColor="#070707"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -97,10 +98,12 @@
             android:id="@+id/editTextTextPersonName"
             android:layout_width="match_parent"
             android:layout_height="57dp"
+            android:padding="20dp"
             android:layout_marginTop="57dp"
             android:background="#FFFFFF"
             android:backgroundTint="#F8F8F8"
             android:ems="10"
+            android:fontFamily="@font/roboto"
             android:inputType="textPersonName"
             android:text="@string/response"
             android:textColor="#808E9B" />

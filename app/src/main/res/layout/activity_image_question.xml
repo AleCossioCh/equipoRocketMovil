@@ -62,15 +62,16 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="316dp"
-        android:layout_height="278dp"
+        android:layout_width="278dp"
+        android:layout_height="254dp"
         android:background="@drawable/bg_txt_white"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/progress"
-        app:layout_constraintVertical_bias="0.178">
+        app:layout_constraintVertical_bias="0.178"
+        android:fontFamily="@font/roboto">
 
         <TextView
             android:id="@+id/textQuestion"
@@ -81,6 +82,7 @@
             android:layout_marginRight="5dp"
             android:background="@drawable/bg_txt_white"
             android:gravity="center"
+            android:fontFamily="@font/roboto"
             android:text="@string/question1"
             android:textAlignment="center"
             android:textColor="#070707"
@@ -88,15 +90,15 @@
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="321dp"
-            android:layout_height="281dp"
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/nogirarenu" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="315dp"
-        android:layout_height="274dp"
+        android:layout_width="285dp"
+        android:layout_height="269dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,7 +113,11 @@
             android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:background="@drawable/bg_txt_white"
-            android:text="@string/opcionEstacion" />
+            android:text="@string/opcionEstacion"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto"
+            />
 
         <Button
             android:id="@+id/idopcionfumar"
@@ -120,7 +126,11 @@
             android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:background="@drawable/bg_txt_white"
-            android:text="@string/opcionfumar" />
+            android:text="@string/opcionfumar"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto"
+            />
 
         <Button
             android:id="@+id/idopcionGirar"
@@ -129,7 +139,11 @@
             android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:background="@drawable/bg_txt_white"
-            android:text="@string/opcionGirar" />
+            android:text="@string/opcionGirar"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto"
+            />
 
         <Button
             android:id="@+id/idopcionstop"
@@ -138,7 +152,11 @@
             android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:background="@drawable/bg_txt_white"
-            android:text="@string/opcionstop" />
+            android:text="@string/opcionstop"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto"
+            />
     </LinearLayout>
 
 
