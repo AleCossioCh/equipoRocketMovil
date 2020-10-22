@@ -1,5 +1,6 @@
 package edu.bo.projectrocket
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,6 +27,12 @@ class ImageAnswerActivity : AppCompatActivity() {
 
         btnIA4.setOnClickListener(){
             btnIA4.setImageResource(R.drawable.bg_btn_red)
+        }
+
+        btn_home.setOnClickListener {
+            val intent = Intent(this@ImageAnswerActivity, HomeActivity::class.java)
+            startActivity(intent)
+
         }
     }
 }

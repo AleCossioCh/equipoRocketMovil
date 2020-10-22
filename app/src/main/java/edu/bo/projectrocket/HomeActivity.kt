@@ -21,7 +21,10 @@ class HomeActivity : AppCompatActivity() {
         idcalendar.setOnClickListener{
             val intent = Intent(this@HomeActivity, CalendarActivity::class.java)
             startActivity(intent)
-
+        }
+        Señalizacion.setOnClickListener{
+            val intent = Intent(this@HomeActivity, ImageAnswerActivity::class.java)
+            startActivity(intent)
         }
     }
 }
