@@ -1,4 +1,7 @@
 package edu.bo.projectrocket
 
-class QuestionDao {
+class QuestionDao(var idQ: String,var question:String) {
+
+
+    //fun getQestions()
 }
