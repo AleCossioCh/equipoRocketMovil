@@ -13,12 +13,12 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         val lista = arrayListOf<Section>()
-        lista.add(Section("Educacion Vial", "100%"))
-        lista.add(Section("Normas de circulacion", "80%"))
-        lista.add(Section("Señalizacion y accidentes", "70%"))
-        lista.add(Section("Legislacion boliviana", "60%"))
-        lista.add(Section("Primeros auxilios", "80%"))
-        lista.add(Section("Mecanica Basica", "90%"))
+        lista.add(Section("Educacion Vial", "100%",R.drawable.ic_walking_foreground))
+        lista.add(Section("Normas de circulacion", "80%",R.drawable.ic_strafic_foreground))
+        lista.add(Section("Señalizacion y accidentes", "70%",R.drawable.ic_right_foreground))
+        lista.add(Section("Legislacion boliviana", "60%",R.drawable.ic_leg_bol_foreground))
+        lista.add(Section("Primeros auxilios", "80%",R.drawable.ic_security_foreground))
+        lista.add(Section("Mecanica Basica", "90%",R.drawable.ic_herramientatuerca_foreground))
 
         val sectionListAdapter = SectionListAdapter(lista, this)
         recycleViewSection.adapter = sectionListAdapter

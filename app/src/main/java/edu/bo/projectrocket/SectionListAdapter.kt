@@ -23,6 +23,7 @@ class SectionListAdapter(val items: ArrayList<Section>, val context: Context):
         val section = items.get(position)
         holder.itemView.textViewName.text = section.name
         holder.itemView.textViewProgress.text = section.progress
+        holder.itemView.my_image_view.setImageResource(section.image)
     }
 
     class SectionListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
