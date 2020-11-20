@@ -24,9 +24,8 @@ class HomeActivity : AppCompatActivity() {
 
         }
         señalizacion.setOnClickListener{
-            val intent = Intent(this@HomeActivity, ImageAnswerActivity::class.java)
+            val intent = Intent(this, PuntajeSeccionActivity::class.java)
             startActivity(intent)
-
         }
     }
 }

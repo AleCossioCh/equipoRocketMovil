@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/image_volante"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
-        <activity android:name=".ImageAnswerActivity"></activity>
+        <activity android:name=".PuntajeSeccionActivity"></activity>
+        <activity android:name=".ImageAnswerActivity" />
         <activity android:name=".TextQuestionActivity" />
         <activity android:name=".CalendarActivity" />
         <activity android:name=".ImageQuestionActivity" />
