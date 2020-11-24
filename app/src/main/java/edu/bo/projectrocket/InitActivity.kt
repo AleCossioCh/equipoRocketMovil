@@ -17,7 +17,7 @@ class InitActivity : AppCompatActivity() {
         timer = Timer()
         timer!!.schedule(object : TimerTask() {
             override fun run() {
-                val intent = Intent(this@InitActivity, HomeActivity::class.java)
+                val intent = Intent(this@InitActivity, ActivityHomeMenu::class.java)
                 startActivity(intent)
                 finish()
             }
