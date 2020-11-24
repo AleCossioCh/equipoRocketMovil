@@ -20,11 +20,15 @@ class HomeActivity : AppCompatActivity() {
         lista.add(Section("Primeros auxilios", "80%",R.drawable.ic_security_foreground))
         lista.add(Section("Mecanica Basica", "90%",R.drawable.ic_herramientatuerca_foreground))
 
+        UpdateHomeActivityWithRecycleView
         val sectionListAdapter = SectionListAdapter(lista, this)
         recycleViewSection.adapter = sectionListAdapter
         val linearLayoutManager = LinearLayoutManager(this)
         linearLayoutManager.orientation = LinearLayoutManager.VERTICAL
         recycleViewSection.layoutManager = linearLayoutManager
 
-    }
+
+        }
+ 
+
 }
