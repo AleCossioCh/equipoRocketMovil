@@ -7,7 +7,7 @@
     tools:context=".HomeActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleViewSection"
+        android:id="@+id/recycleViewSections"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"

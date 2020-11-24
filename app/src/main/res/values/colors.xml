@@ -12,4 +12,5 @@
     <color name="colorButtonWrong">#E84118</color>
     <color name="colorButtonWhite">#F5F6FA</color>
     <color name="colorBackground">#1C295B</color>
+    <color name="colorMenuBar">#192A56</color>
 </resources>
