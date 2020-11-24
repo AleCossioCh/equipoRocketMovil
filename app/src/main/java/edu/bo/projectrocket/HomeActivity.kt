@@ -23,9 +23,5 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
-        señalizacion.setOnClickListener{
-            val intent = Intent(this, PuntajeSeccionActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
