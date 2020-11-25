@@ -1,9 +1,12 @@
 package edu.bo.projectrocket
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.section_row.view.*
 
@@ -31,11 +34,13 @@ class SectionListAdapter():
         return items.count()
     }
 
+
     override fun onBindViewHolder(holder: SectionListViewHolder, position: Int) {
         val section = items.get(position)
         holder.itemView.textViewName.text = section.name
         holder.itemView.textViewProgress.text = section.progress
         holder.itemView.my_image_view.setImageResource(section.image)
+        Log.d("***", "$position")
     }
 
     class SectionListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)

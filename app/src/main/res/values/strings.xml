@@ -14,7 +14,7 @@
     <string name="days15_rbtn">más de 15 días</string>
     <string name="days20_rbtn">más de 20 días</string>
     <string name="save_btn">Guardar</string>
-    <string name="timeQuestion_txt">¿Cuántos días faltan para tu examen de conducción?</string>
+    <string name="timeQuestion_txt">Selecciona la fecha para tu examen de conducción</string>
     <string name="todo">TODO</string>
     <string name="question1">"Esta señal pertenece a "</string>
     <string name="opcionEstacion">No estacionar</string>
