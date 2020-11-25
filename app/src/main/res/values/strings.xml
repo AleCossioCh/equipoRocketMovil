@@ -46,6 +46,7 @@
     <string name="menu_home">Menu</string>
     <string name="menu_gallery">Mi Prueba</string>
     <string name="menu_slideshow">Reiniciar</string>
+    <string name="ConfirmarButton">confirmar</string>
 
 
 </resources>
