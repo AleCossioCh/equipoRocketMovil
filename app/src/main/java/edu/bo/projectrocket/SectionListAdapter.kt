@@ -6,8 +6,11 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import edu.bo.projectrocket.ui.questionText.QuestionViewModel
+import kotlinx.android.synthetic.main.fragment_gallery.view.*
 import kotlinx.android.synthetic.main.section_row.view.*
 
 class SectionListAdapter():
@@ -40,8 +43,19 @@ class SectionListAdapter():
         holder.itemView.textViewName.text = section.name
         holder.itemView.textViewProgress.text = section.progress
         holder.itemView.my_image_view.setImageResource(section.image)
+        holder.itemView.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, TextQuestionActivity::class.java)
+            context.startActivity(intent)
+
+        }
         Log.d("***", "$position")
+
     }
+
+
+
+
 
     class SectionListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 }

@@ -4,16 +4,23 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.Observer
+import edu.bo.projectrocket.repository.QuestionRepository
+import edu.bo.projectrocket.ui.questionText.QuestionViewModel
 import kotlinx.android.synthetic.main.activity_image_question.*
 import kotlinx.android.synthetic.main.activity_text_question.*
 
 class TextQuestionActivity : AppCompatActivity() {
+    lateinit var questionViewlModel: QuestionViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text_question)
+        val repository = QuestionRepository()
+        questionViewlModel = QuestionViewModel(repository)
 
+        questionViewlModel.model.observe(this, Observer(::nextQuestion))
 
-
+        /*
         buttonAnswer1.setOnClickListener(){
            // buttonAnswer1.setBackgroundColor(Color.parseColor("#F5F6FA"))
             buttonAnswer1.setBackgroundResource(R.drawable.bg_btn_red)
@@ -39,5 +46,23 @@ class TextQuestionActivity : AppCompatActivity() {
             buttonAnswer4.setTextColor(Color.parseColor("#F5F6FA"))
 
         }
+
+         */
     }
+
+    fun nextQuestion(model: QuestionViewModel.Question){
+
+        when(model){
+            is QuestionViewModel.Question.IsResponseTrue -> changeFragment(model.response)
+        }
+
+    }
+    fun changeFragment(responseQuestion:Boolean){
+
+        // this part is where is  change to next fragment with question different
+
+
+    }
+
+
 }
