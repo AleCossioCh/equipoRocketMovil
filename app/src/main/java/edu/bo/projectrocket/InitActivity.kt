@@ -23,15 +23,23 @@ class InitActivity : AppCompatActivity() {
             val relationRepository= QuestionWithAnswerRepository(relationDao)
             val getqwaSeñalizacion = GetQuestionsWithAnswers(repository,relationRepository)
 
-            //val arrayList = ArrayList<Question>()
-             /*repository.insertQuestion(Question("¿Que es una vía?", "Texto", "Educacion", 1,R.drawable.ic_walking_foreground))
+
+             val arrayList = ArrayList<Question>()
+             repository.insertQuestion(Question("¿Que es una vía?", "Texto", "Educacion", 1,R.drawable.ic_walking_foreground))
              repository.insertQuestion(Question("¿Cuales son las partes de una vía?", "Texto", "Educacion", 4,R.drawable.ic_walking_foreground))
              repository.insertQuestion(Question("¿Cómo se clasifican las vías?", "Texto", "Educacion", 7,R.drawable.ic_walking_foreground))
-*/
-            /* repository.insertQuestion(Question("¿Que es una vía?", "Texto", "Educacion", 1,0))
+
+             repository.insertQuestion(Question("¿Que es una vía?", "Texto", "Educacion", 1,0))
              repository.insertQuestion(Question("¿Cuales son las partes de una vía?", "Texto", "Educacion", 4,0))
              repository.insertQuestion(Question("¿Cómo se clasifican las vías?", "Texto", "Educacion", 7,0))
 
+             repository.insertQuestion(Question("¿Que es una vía111111111?", "Texto", "Educacion", 1,0))
+             repository.insertQuestion(Question("¿Cuales son las partes de una vía111111111?", "Texto", "Educacion", 4,0))
+             repository.insertQuestion(Question("¿Cómo se clasifican las vías11111111?", "Texto", "Educacion", 7,0))
+
+             repository.insertQuestion(Question("¿Que es una vía?22222222", "Texto", "Educacion", 1,0))
+             repository.insertQuestion(Question("¿Cuales son las partes de una vía?222222222", "Texto", "Educacion", 4,0))
+             repository.insertQuestion(Question("¿Cómo se clasifican las vías?2222222", "Texto", "Educacion", 7,0))
 
              answerRepository.insertAnswer(Answer("Lugar acondicionado para la circulación de vehículos(Art. 46 del reg. del Cód. de Tránsito)","Texto"))
              answerRepository.insertAnswer(Answer("Una vía es donde transitan personas, vehículos y otros","Texto"))
@@ -51,7 +59,7 @@ class InitActivity : AppCompatActivity() {
              relationRepository.insertQuestion(2,6)
              relationRepository.insertQuestion(3,7)
              relationRepository.insertQuestion(3,8)
-             relationRepository.insertQuestion(3,9)*/
+             relationRepository.insertQuestion(3,9)
             //answerRepository.insertAnswer(Answer("No fumar","imagen"))
             //answerRepository.insertAnswer(Answer("Señalizacion","Texto"))
            // answerRepository.insertAnswer(Answer("No adelentar","Texto"))
@@ -61,6 +69,16 @@ class InitActivity : AppCompatActivity() {
 
             val listifAnswers=getqwaSeñalizacion.getEducacion()
 
+            //Extraer 10 preguntas aletorias
+            //val questionsShow = repository.getListQuestions();
+            val questions = repository.get10RandomQuestions();
+            questions.forEach{
+                print("Question:" + it.question)
+                Log.d(
+                    "Question",
+                    "Question = ${it.question}"
+                )
+            }
 
            // val listaEducacion=getqwaSeñalizacion.getANswersOfSeccion("Educacion")
             //relationRepository.deleteQuestion(1)
