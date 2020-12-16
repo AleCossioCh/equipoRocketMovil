@@ -12,6 +12,9 @@ interface IQuestionDAO {
     @Query("SELECT * FROM question_table WHERE question_table.secccion = :secccion")
     fun getQuestionsOf(secccion:String): List<Question>
 
+    @Query("SELECT * FROM question_table ORDER BY random() LIMIT 10")
+    fun get10RandomQuestions(): List<Question>
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertQuestion( question: Question)
 
