@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProjectRocket</string>
+    <string name="app_name">PaquitApp</string>
     <string name="question">Cuando está _________ una doble linea amarilla en la calzada,¿En qué caso usted puede adelantar?</string>
     <string name="response">Escribe el complemento....</string>
     <string name="progress">5/10</string>
@@ -45,7 +45,7 @@
     <string name="appName">PaquitaApp</string>
     <string name="menu_home">Menu</string>
     <string name="menu_gallery">Mi Prueba</string>
-    <string name="menu_slideshow">Reiniciar</string>
+    <string name="menu_slideshow">Proceso</string>
     <string name="ConfirmarButton">confirmar</string>
 
 
