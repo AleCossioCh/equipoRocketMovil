@@ -28,7 +28,7 @@
     <string name="TextQuestionAnswer2">El lado izquierdo de la vía</string>
     <string name="TextQuestionAnswer3">Nunca se debe adelantar</string>
     <string name="TextQuestionAnswer4">Depende la situación</string>
-    <string name="progressIndicator">6/10</string>
+    <string name="progressIndicator">1/10</string>
     <string name="ImageAnswerQ1">¿Cuál de las siguientes imágenes pertenece a “Flujo convergente”?</string>
     <string name="puntaje">Puntaje:</string>
     <string name="numeroPuntaje">15/30</string>

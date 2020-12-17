@@ -15,7 +15,7 @@ class QuestionViewModel(val questionRepository: QuestionRepository):ViewModel() 
     sealed class Question{
         class IsResponseTrue(val response:Boolean):Question()
     }
-    fun getRwsponseCorrect(responseQuestion:String){
+    fun getResponseCorrect(responseQuestion:String){
         _model.value = Question.IsResponseTrue(questionRepository.getResponseTrue(responseQuestion))
 
 

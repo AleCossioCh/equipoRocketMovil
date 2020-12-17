@@ -33,14 +33,13 @@
         tools:layout_editor_absoluteY="12dp" />
 
 
-
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:progress="60"
+        android:progress="10"
         android:progressTint="@color/colorButtonRigth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

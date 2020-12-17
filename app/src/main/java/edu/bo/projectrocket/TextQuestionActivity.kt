@@ -4,22 +4,29 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ProgressBar
+import android.widget.TextView
 import androidx.lifecycle.Observer
 import edu.bo.projectrocket.repository.QuestionRepository
+import edu.bo.projectrocket.ui.questionText.QuestionTextFragment
 import edu.bo.projectrocket.ui.questionText.QuestionViewModel
 import kotlinx.android.synthetic.main.activity_image_question.*
 import kotlinx.android.synthetic.main.activity_text_question.*
+import kotlinx.android.synthetic.main.content_main.*
 
-class TextQuestionActivity : AppCompatActivity() {
+class TextQuestionActivity : AppCompatActivity(), QuestionTextFragment.ProgresionListener {
     lateinit var questionViewlModel: QuestionViewModel
+
+    var numberProgression = 1
+    var progression:TextView?=null
+    var progressBar:ProgressBar?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text_question)
-        val repository = QuestionRepository()
-        questionViewlModel = QuestionViewModel(repository)
 
-        questionViewlModel.model.observe(this, Observer(::nextQuestion))
 
+        progression = findViewById(R.id.progressIndicator)
+        progressBar = findViewById(R.id.progressBar)
         /*
         buttonAnswer1.setOnClickListener(){
            // buttonAnswer1.setBackgroundColor(Color.parseColor("#F5F6FA"))
@@ -48,19 +55,45 @@ class TextQuestionActivity : AppCompatActivity() {
         }
 
          */
+
     }
 
-    fun nextQuestion(model: QuestionViewModel.Question){
+    override fun nextProgresion() {
 
-        when(model){
-            is QuestionViewModel.Question.IsResponseTrue -> changeFragment(model.response)
+        if(numberProgression ==10)
+        {
+            changetoActivityWin()
+        }
+        else
+        {
+            numberProgression = numberProgression+1
+            progression?.text = numberProgression.toString() + "/10"
+            progressBar?.progress = numberProgression *10
+            replaceFragment()
+
         }
 
+
+
+
     }
-    fun changeFragment(responseQuestion:Boolean){
 
-        // this part is where is  change to next fragment with question different
+    fun changetoActivityWin()
+    {
+        val intent = Intent(this@TextQuestionActivity, WinActivity::class.java)
+        startActivity(intent)
 
+    }
+
+    fun replaceFragment()
+    {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        val fragmentoText = QuestionTextFragment()
+        fragmentTransaction.replace(R.id.questionFragment,fragmentoText)
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
 
     }
 
