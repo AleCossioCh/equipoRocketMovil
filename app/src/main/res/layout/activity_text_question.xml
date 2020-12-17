@@ -23,94 +23,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="edu.bo.projectrocket.ui.questionText.QuestionTextFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="12dp" />
 
-    <TextView
-        android:id="@+id/QuestionTextView"
-        android:layout_width="334dp"
-        android:layout_height="149dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/bg_txt_white"
-        android:fontFamily="@font/roboto"
-        android:gravity="center"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
-        android:text="@string/TextQuestion"
-        android:textColor="#000000"
-        android:textSize="22dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <Button
-        android:id="@+id/buttonAnswer1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/bg_txt_white"
-        android:textAllCaps="false"
-        android:textSize="21sp"
-        android:fontFamily="@font/roboto"
-        android:textColor="#000000"
-        android:text="@string/TextQuestionAnswer1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/QuestionTextView" />
-
-    <Button
-        android:id="@+id/buttonAnswer2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/bg_txt_white"
-        android:text="@string/TextQuestionAnswer2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer1"
-        android:textAllCaps="false"
-        android:textSize="21sp"
-        android:fontFamily="@font/roboto"/>
-
-    <Button
-        android:id="@+id/buttonAnswer3"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/bg_txt_white"
-        android:text="@string/TextQuestionAnswer3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textAllCaps="false"
-        android:textSize="21sp"
-        android:fontFamily="@font/roboto"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer2" />
-
-    <Button
-        android:id="@+id/buttonAnswer4"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_txt_white"
-        android:text="@string/TextQuestionAnswer4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textAllCaps="false"
-        android:textSize="21sp"
-        android:fontFamily="@font/roboto"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer3"
-        app:layout_constraintVertical_bias="0.0" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -118,7 +39,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:progress="60"
+        android:progress="10"
         android:progressTint="@color/colorButtonRigth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

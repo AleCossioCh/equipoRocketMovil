@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PaquitApp</string>
+    <string name="app_name">ProjectRocket</string>
     <string name="question">Cuando está _________ una doble linea amarilla en la calzada,¿En qué caso usted puede adelantar?</string>
     <string name="response">Escribe el complemento....</string>
     <string name="progress">5/10</string>
@@ -28,7 +28,7 @@
     <string name="TextQuestionAnswer2">El lado izquierdo de la vía</string>
     <string name="TextQuestionAnswer3">Nunca se debe adelantar</string>
     <string name="TextQuestionAnswer4">Depende la situación</string>
-    <string name="progressIndicator">6/10</string>
+    <string name="progressIndicator">1/10</string>
     <string name="ImageAnswerQ1">¿Cuál de las siguientes imágenes pertenece a “Flujo convergente”?</string>
     <string name="puntaje">Puntaje:</string>
     <string name="numeroPuntaje">15/30</string>
@@ -45,8 +45,10 @@
     <string name="appName">PaquitaApp</string>
     <string name="menu_home">Menu</string>
     <string name="menu_gallery">Mi Prueba</string>
-    <string name="menu_slideshow">Proceso</string>
+    <string name="menu_slideshow">Reiniciar</string>
     <string name="ConfirmarButton">confirmar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
